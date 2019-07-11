@@ -1,0 +1,199 @@
+{
+  "type" : "Coverity issues",
+  "formatVersion" : 6,
+  "suppressedIssueCount" : 8,
+  "issues" : [
+    {
+      "mergeKey" : "212beb9ecef431f1c49adbd52a784e5b",
+      "occurrenceCountForMK" : 1,
+      "occurrenceNumberInMK" : 1,
+      "referenceOccurrenceCountForMK" : null,
+      "checkerName" : "PW.DECLARED_BUT_NOT_REFERENCED",
+      "subcategory" : "none",
+      "extra" : "   int iamanewbugtoo;\n",
+      "domain" : "STATIC_C",
+      "language" : "C",
+      "mainEventFilePathname" : "C:\\Workrelated\\Documentation\\Training\\Labs\\Intro\\CC\\fgets.c",
+      "strippedMainEventFilePathname" : "fgets.c",
+      "mainEventLineNumber" : 27,
+      "properties" : {},
+      "functionDisplayName" : null,
+      "functionMangledName" : null,
+      "localStatus" : null,
+      "ordered" : true,
+      "events" : [
+        {
+          "covLStrEventDescription" : "{CovLStrv2{{t{{0} was declared but never referenced}{variable \"iamanewbugtoo\"}}}}",
+          "eventDescription" : "variable \"iamanewbugtoo\" was declared but never referenced",
+          "eventNumber" : 1,
+          "eventTreePosition" : "1",
+          "eventSet" : 0,
+          "eventTag" : "declared_but_not_referenced",
+          "filePathname" : "C:\\Workrelated\\Documentation\\Training\\Labs\\Intro\\CC\\fgets.c",
+          "strippedFilePathname" : "fgets.c",
+          "lineNumber" : 27,
+          "main" : true,
+          "moreInformationId" : null,
+          "remediation" : false,
+          "events" : null
+        },
+        {
+          "covLStrEventDescription" : "       ^",
+          "eventDescription" : "       ^",
+          "eventNumber" : 2,
+          "eventTreePosition" : "2",
+          "eventSet" : 0,
+          "eventTag" : "caretline",
+          "filePathname" : "C:\\Workrelated\\Documentation\\Training\\Labs\\Intro\\CC\\fgets.c",
+          "strippedFilePathname" : "fgets.c",
+          "lineNumber" : 27,
+          "main" : false,
+          "moreInformationId" : null,
+          "remediation" : false,
+          "events" : null
+        }
+      ],
+      "stateOnServer" : {
+        "cid" : 10189,
+        "stream" : "Intro",
+        "triage" : {
+          "action" : "Undecided",
+          "classification" : "Unclassified",
+          "externalReference" : "",
+          "fixTarget" : "Untargeted",
+          "legacy" : "False",
+          "owner" : "admin",
+          "severity" : "Unspecified"
+        },
+        "customTriage" : {
+          "TestAttr" : ""
+        },
+        "presentInReferenceSnapshot" : false,
+        "firstDetectedDateTime" : "2019-05-21T13:31:22-06:00",
+        "components" : [
+          "Other"
+        ],
+        "cached" : false,
+        "retrievalDateTime" : "2019-05-22T14:16:50-06:00",
+        "ownerLdapServerName" : "local"
+      },
+      "checkerProperties" : {
+        "category" : "Parse warnings",
+        "categoryDescription" : "Parse warnings",
+        "cweCategory" : "398",
+        "issueKinds" : [
+          "QUALITY"
+        ],
+        "eventSetCaptions" : [],
+        "impact" : "Low",
+        "impactDescription" : "Low",
+        "subcategoryLocalEffect" : "A parse warning may reduce maintainability of the code, or it may indicate a serious error.",
+        "subcategoryShortDescription" : "Parse warning",
+        "subcategoryLongDescription" : "A parse warning from the Coverity parser may indicate a bug, or poor coding practice"
+      }
+    }
+  ],
+  "desktopAnalysisSettings" : {
+    "analysisDateTime" : "2019-05-22T14:16:45-06:00",
+    "covRunDesktopArgs" : [
+      "--host",
+      "localhost",
+      "--port",
+      "8333",
+      "--stream",
+      "Intro",
+      "--user",
+      "admin",
+      "--json-output-v6",
+      "json",
+      "--analyze-captured-source",
+      "--whole-program",
+      "--present-in-reference",
+      "false",
+      "--dir",
+      "C:\\Workrelated\\Documentation\\Training\\Labs\\Intro\\CC/data-coverity/v2019.03-1/idir",
+      "--data-dir",
+      "C:\\Workrelated\\Documentation\\Training\\Labs\\Intro\\CC/data-coverity",
+      "--tmpdir",
+      "C:\\tmp"
+    ],
+    "effectiveStripPaths" : [
+      "C:\\Workrelated\\Documentation\\Training\\Labs\\Intro\\CC"
+    ],
+    "analysisScopePathnames" : [
+      "C:\\Workrelated\\Documentation\\Training\\Labs\\Intro\\CC\\c99.c",
+      "C:\\Workrelated\\Documentation\\Training\\Labs\\Intro\\CC\\fgets.c",
+      "C:\\Workrelated\\Documentation\\Training\\Labs\\Intro\\CC\\function_metrics.c",
+      "C:\\Workrelated\\Documentation\\Training\\Labs\\Intro\\CC\\include.h",
+      "C:\\Workrelated\\Documentation\\Training\\Labs\\Intro\\CC\\opt\\hello\\hello.cpp",
+      "C:\\Workrelated\\Documentation\\Training\\Labs\\Intro\\CC\\opt\\test.cpp",
+      "C:\\cygwin\\lib\\gcc\\i686-pc-cygwin\\7.3.0\\include\\stdarg.h",
+      "C:\\cygwin\\lib\\gcc\\i686-pc-cygwin\\7.3.0\\include\\stddef.h",
+      "C:\\cygwin\\usr\\include\\_ansi.h",
+      "C:\\cygwin\\usr\\include\\_newlib_version.h",
+      "C:\\cygwin\\usr\\include\\alloca.h",
+      "C:\\cygwin\\usr\\include\\bits\\byteswap.h",
+      "C:\\cygwin\\usr\\include\\bits\\endian.h",
+      "C:\\cygwin\\usr\\include\\bits\\wordsize.h",
+      "C:\\cygwin\\usr\\include\\cygwin\\config.h",
+      "C:\\cygwin\\usr\\include\\cygwin\\stdlib.h",
+      "C:\\cygwin\\usr\\include\\cygwin\\wait.h",
+      "C:\\cygwin\\usr\\include\\endian.h",
+      "C:\\cygwin\\usr\\include\\machine\\_default_types.h",
+      "C:\\cygwin\\usr\\include\\machine\\_endian.h",
+      "C:\\cygwin\\usr\\include\\machine\\_types.h",
+      "C:\\cygwin\\usr\\include\\machine\\endian.h",
+      "C:\\cygwin\\usr\\include\\machine\\ieeefp.h",
+      "C:\\cygwin\\usr\\include\\machine\\stdlib.h",
+      "C:\\cygwin\\usr\\include\\machine\\types.h",
+      "C:\\cygwin\\usr\\include\\newlib.h",
+      "C:\\cygwin\\usr\\include\\stdio.h",
+      "C:\\cygwin\\usr\\include\\stdlib.h",
+      "C:\\cygwin\\usr\\include\\sys\\_pthreadtypes.h",
+      "C:\\cygwin\\usr\\include\\sys\\_sigset.h",
+      "C:\\cygwin\\usr\\include\\sys\\_stdint.h",
+      "C:\\cygwin\\usr\\include\\sys\\_timespec.h",
+      "C:\\cygwin\\usr\\include\\sys\\_timeval.h",
+      "C:\\cygwin\\usr\\include\\sys\\_types.h",
+      "C:\\cygwin\\usr\\include\\sys\\cdefs.h",
+      "C:\\cygwin\\usr\\include\\sys\\config.h",
+      "C:\\cygwin\\usr\\include\\sys\\features.h",
+      "C:\\cygwin\\usr\\include\\sys\\lock.h",
+      "C:\\cygwin\\usr\\include\\sys\\reent.h",
+      "C:\\cygwin\\usr\\include\\sys\\select.h",
+      "C:\\cygwin\\usr\\include\\sys\\stdio.h",
+      "C:\\cygwin\\usr\\include\\sys\\sysmacros.h",
+      "C:\\cygwin\\usr\\include\\sys\\timespec.h",
+      "C:\\cygwin\\usr\\include\\sys\\types.h"
+    ],
+    "strippedAnalysisScopePathnames" : [],
+    "auxiliaryScopePathnames" : [],
+    "strippedAuxiliaryScopePathnames" : [],
+    "referenceSnapshot" : {
+      "snapshotId" : 10025,
+      "codeVersionDateTime" : "2019-05-22T11:46:59-06:00",
+      "description" : "",
+      "version" : "",
+      "analysisVersion" : "2019.03-1",
+      "analysisVersionOverride" : "",
+      "target" : ""
+    },
+    "effectiveAnalysisSettings" : {
+      "covAnalyzeArgs" : [
+        "--fb-include",
+        "coverity-default",
+        "--aggressiveness-level",
+        "high",
+        "--all",
+        "--enable",
+        "PARSE_ERROR"
+      ],
+      "fileOptions" : [],
+      "fileCheckerOptions" : []
+    },
+    "relativeTo" : "C:\\Workrelated\\Documentation\\Training\\Labs\\Intro\\CC",
+    "intermediateDir" : "C:\\Workrelated\\Documentation\\Training\\Labs\\Intro\\CC\\data-coverity\\v2019.03-1\\idir"
+  },
+  "error" : null,
+  "warnings" : []
+}
